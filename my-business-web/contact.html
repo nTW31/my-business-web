@@ -12,5 +12,29 @@
         <h1>ติดต่อเรา (Contact)</h1>
       </nav>
     </header>
+    <main>
+      <!--4.1 Contact Form ฟอร์มติดต่อ -->
+      <section id="contact">
+        <form action="/register" method="POST">
+          <fieldset>
+            <label for="fname">ชื่อ:</label>
+            <input type="text" id="fname" name="firstname" required />
+            <label for="lname">นามสกุล:</label>
+            <input type="text" id="lname" name="lastname" required />
+            <br />
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="phone">เบอร์โทร:</label>
+            <input type="phone" id="phone" name="phone" required />
+            <br />
+            <label for="note">รายละเอียด:</label><br />
+            <textarea name="note" id="note" rows="5" cols="50"></textarea>
+          </fieldset>
+          <br />
+          <button type="submit">ส่งข้อมูล</button>
+          <button type="reset">ยกเลิก</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
