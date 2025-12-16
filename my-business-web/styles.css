@@ -57,3 +57,42 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(204, 0, 0, 0.4);
 }
+/* =========================================
+   3. HEADER & NAVIGATION (โจทย์ข้อ 5ก, 6ก)
+   ========================================= */
+#header {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
