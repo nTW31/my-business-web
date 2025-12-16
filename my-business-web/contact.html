@@ -1,68 +1,113 @@
 <!DOCTYPE html>
 <html lang="th">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ติดต่อเรา - RaptorX Security</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ติดต่อเรา - RaptorX Security</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
       <nav>
-        <h1>ติดต่อเรา (Contact)</h1>
-        <ul>
+        <div class="nav-logo">
+          <img src="images/logo.jpg" alt="RaptorX Logo" class="nav-logo-img" />
+        </div>
+        <ul class="nav-links">
           <li><a href="index.html">หน้าแรก</a></li>
           <li><a href="about.html">เกี่ยวกับเรา</a></li>
           <li><a href="services.html">บริการ</a></li>
-          <li><a href="contact.html">ติดต่อ</a></li>
+          <li><a href="contact.html" style="color: var(--primary-color);">ติดต่อ</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <!--4.1 Contact Form ฟอร์มติดต่อ -->
-      <section id="contact">
-        <form action="/register" method="POST">
-          <fieldset>
-            <label for="fname">ชื่อ:</label>
-            <input type="text" id="fname" name="firstname" required />
-            <label for="lname">นามสกุล:</label>
-            <input type="text" id="lname" name="lastname" required />
-            <br />
-            <label for="email">อีเมล:</label>
-            <input type="email" id="email" name="email" required />
-            <label for="phone">เบอร์โทร:</label>
-            <input type="phone" id="phone" name="phone" required />
-            <br />
-            <label for="note">รายละเอียด:</label><br />
-            <textarea name="note" id="note" rows="5" cols="50"></textarea>
-          </fieldset>
-          <br />
-          <button type="submit">ส่งข้อมูล</button>
-          <button type="reset">ยกเลิก</button>
-        </form>
-      </section>
-      <hr />
-      <!-- 4.2 ที่อยู่ของบริษัท และ 4.3 Map -->
-      <section>
-        <h2>ที่อยู่บริษัท</h2>
-        <p>
-          บริษัท RaptorX Security ที่อยู่ของบริษัท ณ มหาวิทยาลัยบูรพา ตำบลแสนสุข
-          อำเภอเมือง จังหวัดชลบุรี 20131
-        </p>
-      </section>
-      <!-- แผนที่ -->
-      <section>
-        <h2>พิกัดแผนที่</h2>
-        <iframe
-          src="https://www.google.com/maps?q=คณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา&output=embed"
-          width="50%"
-          height="300"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </section>
-    </main>
-    <a href="#" class="back-to-top">↑</a>
-  </body>
+    </div>
+  </header>
+
+  <section class="hero" style="height: 40vh;">
+    <div class="container">
+      <h2>ติดต่อเรา</h2>
+      <p>ปรึกษาปัญหาความปลอดภัยไซเบอร์ หรือแจ้งเหตุฉุกเฉินได้ตลอด 24 ชม.</p>
+    </div>
+  </section>
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+
+          <div style="flex: 1; min-width: 300px;">
+            <h2 style="color: var(--primary-color); margin-bottom: 20px;">แบบฟอร์มติดต่อ</h2>
+
+            <form action="#" method="POST">
+              <div style="display: flex; gap: 10px;">
+                <div style="flex: 1;">
+                  <label for="fname">ชื่อ:</label>
+                  <input type="text" id="fname" name="firstname" placeholder="ชื่อจริง" required />
+                </div>
+                <div style="flex: 1;">
+                  <label for="lname">นามสกุล:</label>
+                  <input type="text" id="lname" name="lastname" placeholder="นามสกุล" required />
+                </div>
+              </div>
+
+              <div style="margin-top: 15px;">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required />
+              </div>
+
+              <div style="margin-top: 15px;">
+                <label for="phone">เบอร์โทร:</label>
+                <input type="tel" id="phone" name="phone" placeholder="08x-xxx-xxxx" required />
+              </div>
+
+              <div style="margin-top: 15px;">
+                <label for="note">รายละเอียด / ข้อความ:</label>
+                <textarea name="note" id="note" rows="5" placeholder="พิมพ์ข้อความของคุณที่นี่..."></textarea>
+              </div>
+
+              <div style="margin-top: 20px; display: flex; gap: 10px;">
+                <button type="submit" class="btn">ส่งข้อมูล</button>
+                <button type="reset" class="btn" style="background-color: #444; box-shadow: none;">ยกเลิก</button>
+              </div>
+            </form>
+          </div>
+
+          <div style="flex: 1; min-width: 300px;">
+            <h2 style="color: var(--primary-color); margin-bottom: 20px;">ที่อยู่และแผนที่</h2>
+            <!-- 4.2 ที่อยู่ของบริษัท และ 4.3 Map -->
+            <div
+              style="background: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 20px;">
+              <h3 style="margin-bottom: 10px;">สำนักงานใหญ่</h3>
+              <p style="margin-bottom: 10px;">
+                <strong>บริษัท RaptorX Security จำกัด</strong><br>
+                ณ มหาวิทยาลัยบูรพา ตำบลแสนสุข<br>
+                อำเภอเมือง จังหวัดชลบุรี 20131
+              </p>
+              <p><strong>Email:</strong> 67160028@go.buu.ac.th</p>
+              <p><strong>Tel:</strong> 012-3456-789</p>
+            </div>
+            <!-- แผนที่ -->
+            <div style="border: 2px solid var(--primary-color); border-radius: 8px; overflow: hidden;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.230232464734!2d100.92386131482253!3d13.28784799065096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102b60456226161%3A0x6e789823611116f!2sBurapha%20University!5e0!3m2!1sen!2sth!4v1626340000000!5m2!1sen!2sth"
+                width="100%" height="300" style="border:0;" loading="lazy">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2025 บริษัท RaptorX Security Co., Ltd. สงวนลิขสิทธิ์นะจ๊ะ.</p>
+    <p>ติดต่อ: 67160028@go.buu.ac.th | โทร: 012-3456-789</p>
+  </footer>
+
+  <a href="#" class="back-to-top">↑</a>
+</body>
+
 </html>
