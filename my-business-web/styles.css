@@ -1,5 +1,5 @@
 /* =========================================
-   1. RESET & VARIABLES (โจทย์ข้อ 1ก, 3ก)
+   1. RESET & VARIABLES (ธีมดุดัน Dark Mode)
    ========================================= */
 * {
   margin: 0;
@@ -8,52 +8,29 @@
 }
 
 :root {
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --accent-color: #38bdf8;
+  /* Color Palette: Black/Red Theme */
+  --primary-color: #ff0000; /* แดงสด (ให้เด่นบนพื้นดำ) */
+  --secondary-color: #0a0a0a; /* ดำเกือบสนิท (Header/Footer) */
+  --bg-color: #000000; /* พื้นหลังดำสนิท */
+  --text-color: #e0e0e0; /* สีตัวอักษรขาวควันบุหรี่ (อ่านง่ายกว่าขาวล้วน) */
+  --card-bg: #1a1a1a; /* พื้นหลังการ์ด (เทาเข้ม) */
+  --border-color: #333333; /* สีเส้นขอบ */
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--bg-primary);
-  color: var(--text-secondary);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color); /* พื้นหลังดำ */
 }
 
-h1,
-h2,
-h3 {
-  color: var(--text-primary);
-  font-weight: 600;
-}
-
-.card-container {
-  background-color: var(--bg-secondary);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
-}
-.btn-pro {
-  background-color: var(--accent-color);
-  color: #0f172a;
-  padding: 10px 24px;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s, opacity 0.2s;
-}
-
-.btn-pro:hover {
-  opacity: 0.9;
-  transform: translateY(-1px); /* ขยับขึ้นนิดนึงตอนเอาเมาส์ชี้ */
-}
 /* =========================================
-   2. GLOBAL COMPONENTS (โจทย์ข้อ 1ค, 4)
+   2. GLOBAL COMPONENTS
    ========================================= */
 .container {
   max-width: 1200px;
@@ -65,35 +42,38 @@ h3 {
   padding: 60px 0;
 }
 
+/* Button Styling */
 .btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--primary-color);
-  color: var(--white);
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* เพิ่มแสงเงาสีแดง */
 }
 
 .btn:hover {
-  background-color: #990000;
+  background-color: #cc0000;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(204, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); /* เรืองแสงเมื่อ Hover */
 }
+
 /* =========================================
-   3. HEADER & NAVIGATION (โจทย์ข้อ 5ก, 6ก)
+   3. HEADER & NAVIGATION
    ========================================= */
 #header {
   background-color: var(--secondary-color);
-  color: var(--white);
+  color: var(--text-color);
   padding: 15px 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid var(--primary-color); /* เส้นแดงตัดขอบล่าง */
 }
 
 nav {
@@ -112,7 +92,7 @@ nav ul li {
 }
 
 nav a {
-  color: var(--white);
+  color: var(--text-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -120,5 +100,151 @@ nav a {
 
 nav a:hover {
   color: var(--primary-color);
-  text-decoration: underline;
+  text-shadow: 0 0 5px var(--primary-color); /* ข้อความเรืองแสง */
+}
+
+/* =========================================
+   4. HERO SECTION
+   ========================================= */
+.hero {
+  height: 80vh;
+  /* เปลี่ยนรูปพื้นหลังให้เข้มขึ้นด้วย Linear Gradient สีดำ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary-color);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* =========================================
+   5. SERVICES & CARDS (Dark Mode Cards)
+   ========================================= */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  flex: 1 1 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, border-color 0.3s;
+}
+
+.card h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+/* =========================================
+   6. CONTACT FORM (Dark Mode Form)
+   ========================================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: white;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: #333;
+}
+
+label {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* =========================================
+   7. FOOTER
+   ========================================= */
+#footer {
+  background-color: var(--secondary-color);
+  color: #888;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-top: 1px solid var(--border-color);
+}
+
+/* =========================================
+   8. BACK TO TOP
+   ========================================= */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  z-index: 50;
+  transition: transform 0.3s;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1);
+}
+.nav-logo-img {
+  height: 60px;
+
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
