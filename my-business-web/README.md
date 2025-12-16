@@ -35,8 +35,6 @@ my-business-web/
 
 ## CSS Checklist
 
-เอกสารนี้ยืนยันว่าโปรเจกต์ได้ใช้งานคุณสมบัติ CSS ตามเกณฑ์ที่กำหนดครบถ้วนแล้ว
-
 - [x] Universal Selector & Reset (`*`)
 - [x] Element Selectors (`h1–h4`, `p`, `a`, `table`)
 - [x] Class Selectors (`.hero`, `.card`, `.btn`)
