@@ -1,5 +1,5 @@
 /* =========================================
-   1. RESET & VARIABLES (ธีมดุดัน Dark Mode)
+   1. RESET & VARIABLES (โจทย์ข้อ 1ก, 3ก)
    ========================================= */
 * {
   margin: 0;
@@ -8,13 +8,12 @@
 }
 
 :root {
-  /* Color Palette: Black/Red Theme */
-  --primary-color: #ff0000; /* แดงสด (ให้เด่นบนพื้นดำ) */
-  --secondary-color: #0a0a0a; /* ดำเกือบสนิท (Header/Footer) */
-  --bg-color: #000000; /* พื้นหลังดำสนิท */
-  --text-color: #e0e0e0; /* สีตัวอักษรขาวควันบุหรี่ (อ่านง่ายกว่าขาวล้วน) */
-  --card-bg: #1a1a1a; /* พื้นหลังการ์ด (เทาเข้ม) */
-  --border-color: #333333; /* สีเส้นขอบ */
+  --primary-color: #ff0000;
+  --secondary-color: #0a0a0a;
+  --bg-color: #000000;
+  --text-color: #e0e0e0;
+  --card-bg: #1a1a1a;
+  --border-color: #333333;
 }
 
 html {
@@ -26,11 +25,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: var(--text-color);
-  background-color: var(--bg-color); /* พื้นหลังดำ */
+  background-color: var(--bg-color);
 }
 
 /* =========================================
-   2. GLOBAL COMPONENTS
+   2. GLOBAL COMPONENTS (โจทย์ข้อ 1ค, 4)
    ========================================= */
 .container {
   max-width: 1200px;
@@ -42,7 +41,6 @@ body {
   padding: 60px 0;
 }
 
-/* Button Styling */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -54,17 +52,17 @@ body {
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); /* เพิ่มแสงเงาสีแดง */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
 }
 
 .btn:hover {
   background-color: #cc0000;
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6); /* เรืองแสงเมื่อ Hover */
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
 }
 
 /* =========================================
-   3. HEADER & NAVIGATION
+   3. HEADER & NAVIGATION (โจทย์ข้อ 5ก, 6ก)
    ========================================= */
 #header {
   background-color: var(--secondary-color);
@@ -73,7 +71,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 2px solid var(--primary-color); /* เส้นแดงตัดขอบล่าง */
+  border-bottom: 2px solid var(--primary-color);
 }
 
 nav {
@@ -100,15 +98,14 @@ nav a {
 
 nav a:hover {
   color: var(--primary-color);
-  text-shadow: 0 0 5px var(--primary-color); /* ข้อความเรืองแสง */
+  text-shadow: 0 0 5px var(--primary-color);
 }
 
 /* =========================================
-   4. HERO SECTION
+   4. HERO SECTION (โจทย์ข้อ 1ค, 2ง, 5ข)
    ========================================= */
 .hero {
   height: 80vh;
-  /* เปลี่ยนรูปพื้นหลังให้เข้มขึ้นด้วย Linear Gradient สีดำ */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
     url("../images/hero-bg.jpg");
   background-size: cover;
@@ -136,7 +133,7 @@ nav a:hover {
 }
 
 /* =========================================
-   5. SERVICES & CARDS (Dark Mode Cards)
+   5. SERVICES & CARDS (โจทย์ข้อ 4ค, 6ข)
    ========================================= */
 .services-grid {
   display: flex;
@@ -167,7 +164,7 @@ nav a:hover {
 }
 
 /* =========================================
-   6. CONTACT FORM (Dark Mode Form)
+   6. CONTACT FORM (โจทย์ข้อ 6ง)
    ========================================= */
 form {
   display: flex;
@@ -206,7 +203,7 @@ label {
 }
 
 /* =========================================
-   7. FOOTER
+   7. FOOTER (โจทย์ข้อ 4จ)
    ========================================= */
 #footer {
   background-color: var(--secondary-color);
@@ -218,7 +215,7 @@ label {
 }
 
 /* =========================================
-   8. BACK TO TOP
+   8. FIXED ELEMENT (โจทย์ข้อ 5ค)
    ========================================= */
 .back-to-top {
   position: fixed;
