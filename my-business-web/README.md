@@ -21,7 +21,8 @@ my-business-web/
 ├── about.html
 ├── services.html
 ├── contact.html
-├── styles.css
+├── css/
+│ └── styles.css
 ├── README.md
 └── images/
     ├── logo.jpg
