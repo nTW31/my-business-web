@@ -1,88 +1,121 @@
 <!DOCTYPE html>
 <html lang="th">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>บริการของเรา - RaptorX Security</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>บริการของเรา - RaptorX Security</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
       <nav>
-        <h1>บริการของเรา</h1>
+        <div class="nav-logo">
+          <img src="images/logo.jpg" alt="RaptorX Logo" class="nav-logo-img" />
+        </div>
         <!--Link กลับหน้าแรก -->
-        <ul>
+        <ul class="nav-links">
           <li><a href="index.html">หน้าแรก</a></li>
           <li><a href="about.html">เกี่ยวกับเรา</a></li>
-          <li><a href="services.html">บริการ</a></li>
+          <li><a href="services.html" style="color: var(--primary-color);">บริการ</a></li>
           <li><a href="contact.html">ติดต่อ</a></li>
         </ul>
       </nav>
-      <hr />
-    </header>
-    <main>
-      <!--3.1 รายการบริการ และ 3.2 section สําหรับแต่ละบริการ -->
-      <section>
-        <h2>1.ทดสอบเจาะระบบ (Penetration Testing)</h2>
-        <p>
-          ทีมงานเราจะจำลองการโจมตีทางไซเบอร์เพื่อค้นหาช่องโหว่และทดสอบความปลอดภัยของระบบคอมพิวเตอร์
-          เครือข่าย และแอปพลิเคชัน
-        </p>
-      </section>
-      <section>
-        <h2>2.กู้คืนระบบฉุกเฉิน (Disaster Recovery)</h2>
-        <p>
-          หากโดนโจมตี เรามีทีมพร้อมกู้ข้อมูลสำคัญของคุณกลับมาภายใน 1 ชั่วโมง
-        </p>
-      </section>
-      <section>
-        <h2>3.บริการเฝ้าระวังและสนับสนุนระบบ (24/7 IT Support)</h2>
-        <p>
-          ทีมงาน RaptorX และ AI เฝ้าหน้าจอแทนคุณ ตรวจจับความผิดปกติทุกวินาที
-          ไม่มีหลับ แบบดุดัน ไม่มีพัก
-        </p>
-      </section>
-      <!-- #3.3 ส่วนตารางเปรียบเทียบแพ็กเกจ -->
-      <section>
-        <h2>ตารางเปรียบเทียบแพ็กเกจ</h2>
-        <table border="1" cellpadding="10" cellspacing="0" width="100%">
-          <tr>
-            <th>แพ็กเกจ</th>
-            <th>24/7 IT Support</th>
-            <th>Disaster Recovery</th>
-            <th>Penetration Testing</th>
-            <th>ราคา</th>
-          </tr>
-          <tr>
-            <td style="text-align: center">Basic</td>
-            <td style="text-align: center">✔</td>
-            <td style="text-align: center">✘</td>
-            <td style="text-align: center">✘</td>
-            <td style="text-align: center">1,500 บาท/เดือน</td>
-          </tr>
-          <tr>
-            <td style="text-align: center">Standard</td>
-            <td style="text-align: center">✔</td>
-            <td style="text-align: center">✔</td>
-            <td style="text-align: center">✘</td>
-            <td style="text-align: center">3,259 บาท/เดือน</td>
-          </tr>
-          <tr>
-            <td style="text-align: center">Premium</td>
-            <td style="text-align: center">✔</td>
-            <td style="text-align: center">✔</td>
-            <td style="text-align: center">✔</td>
-            <td style="text-align: center">5,599 บาท/เดือน</td>
-          </tr>
-        </table>
-        <br />
-      </section>
-    </main>
-  </body>
-  <footer>
-    <hr />
-    <p>&copy; 2025 บริษัทRaptorX Security. สงวนลิขสิทธิ์นะจ๊ะ.</p>
+  </header>
+
+  <section class="hero" style="height: 50vh;">
+    <div class="container">
+      <h2>บริการของเรา</h2>
+      <p>โซลูชันความปลอดภัยครบวงจร เพื่อปกป้องธุรกิจของคุณ</p>
+    </div>
+  </section>
+  <main>
+    <section class="section">
+      <div class="container">
+        <!--3.1 รายการบริการ และ 3.2 section สําหรับแต่ละบริการ -->
+        <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 40px;">บริการหลัก</h2>
+
+        <div class="services-grid">
+          <div class="card">
+            <h3>1. Penetration Testing</h3>
+            <p>ทีมงานเราจะจำลองการโจมตีทางไซเบอร์เพื่อค้นหาช่องโหว่และทดสอบความปลอดภัยของระบบคอมพิวเตอร์ เครือข่าย
+              และแอปพลิเคชัน ก่อนที่แฮกเกอร์ตัวจริงจะเจอ</p>
+          </div>
+
+          <div class="card">
+            <h3>2. Disaster Recovery</h3>
+            <p>กู้คืนระบบฉุกเฉิน! หากโดนโจมตีหรือข้อมูลสูญหาย
+              เรามีทีมพร้อมกู้ข้อมูลสำคัญของคุณกลับมาให้ใช้งานได้ปกติภายใน 1
+              ชั่วโมง</p>
+          </div>
+
+          <div class="card">
+            <h3>3. 24/7 IT Support</h3>
+            <p>บริการเฝ้าระวังและสนับสนุนระบบ ทีมงาน RaptorX และ AI เฝ้าหน้าจอแทนคุณ ตรวจจับความผิดปกติทุกวินาที
+              ไม่มีหลับ
+              แบบดุดัน ไม่มีพัก</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #3.3 ส่วนตารางเปรียบเทียบแพ็กเกจ -->
+    <section class="section" style="background-color: #050505;">
+      <div class="container">
+        <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 40px;">ตารางเปรียบเทียบแพ็กเกจ</h2>
+
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 20%;">แพ็กเกจ</th>
+                <th>24/7 IT Support</th>
+                <th>Disaster Recovery</th>
+                <th>Penetration Testing</th>
+                <th style="width: 20%;">ราคา</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Basic</strong></td>
+                <td>✔</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>1,500 บาท/เดือน</td>
+              </tr>
+              <tr>
+                <td><strong>Standard</strong></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✘</td>
+                <td>3,259 บาท/เดือน</td>
+              </tr>
+              <tr>
+                <td><strong>Premium</strong><br><span
+                    style="font-size: 80%; color: var(--primary-color);">(แนะนำ)</span>
+                </td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>5,599 บาท/เดือน</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="contact.html" class="btn">สนใจสมัครแพ็กเกจ</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <p>&copy; 2025 บริษัท RaptorX Security Co., Ltd. สงวนลิขสิทธิ์นะจ๊ะ.</p>
     <p>ติดต่อ: 67160028@go.buu.ac.th | โทร: 012-3456-789</p>
   </footer>
+
+  <a href="#" class="back-to-top">↑</a>
+</body>
+
 </html>
