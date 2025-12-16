@@ -217,3 +217,31 @@ label {
   color: var(--primary-color);
   font-weight: bold;
 }
+
+#footer {
+  background-color: var(--secondary-color);
+  color: #888;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 50px;
+  border-top: 1px solid var(--border-color);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  z-index: 50;
+  transition: transform 0.3s;
+}
