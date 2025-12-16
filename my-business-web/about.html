@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles.css" />
     <style>
         .team-photo {
-            width: 120px;
-            height: 120px;
+            width: 50px;
+            height: 50px;
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid var(--primary-color);
@@ -32,21 +32,22 @@
                 <!--2.4 Link กลับหน้าแรก-->
                 <ul class="nav-links">
                     <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="about.html" style="color: var(--primary-color);">เกี่ยวกับเรา</a></li>
                     <li><a href="services.html">บริการ</a></li>
                     <li><a href="contact.html">ติดต่อ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <section class="hero about-hero">
+    <section class="hero" style="height: 50vh;">
+        <div class="container">
             <div class="container">
-                <h1>เกี่ยวกับเรา</h1>
-                <p>รู้จัก RaptorX Security ให้มากขึ้น</p>
+                <h2>เกี่ยวกับ RaptorX</h2>
+                <p>ผู้นำด้านความปลอดภัยไซเบอร์ยุคใหม่ ขับเคลื่อนด้วย AI</p>
                 <!-- 2.1เรื่องราวของบริษัท -->
             </div>
-        </section>
+    </section>
+    <main>
         <section class="section">
             <div class="container">
                 <h2 style="color: var(--primary-color); margin-bottom: 20px;">ความเป็นมาของเรา</h2>
@@ -59,50 +60,49 @@
             </div>
         </section>
         <hr style="border-color: var(--border-color); opacity: 0.3;">
-        <section>
-            <!-- 2.2 ทีม (ใช้<figure> สําหรับแต่ละคน) -->
-            <h2>ผู้บริหารและพนักงาน</h2>
-            <figure>
-                <img src="images/CEO-1.jpg" alt="CEO" width="150" />
-                <figcaption>
-                    <strong>นาย อี ลอน มัสก์ (Founder & CEO)</strong><br />
-                    ผู้ก่อตั้งและประธานเจ้าหน้าที่บริหาร
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/CSO-2.jpg" alt="Chief Security Officer" width="150" />
-                <figcaption>
-                    <strong>นาย มาร์ก ซักเคอร์เบิร์ก (CSO - Chief Security Officer)
-                    </strong>
-                    <br />
-                    หัวหน้าฝ่ายความปลอดภัยระบบ<br />
-                    ผู้เชี่ยวชาญด้านการป้องกันและรับมือภัยคุกคามไซเบอร์
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="images/Employee-3.jpg" alt="Network Engineer " width="150" />
-                <figcaption>
-                    <strong>นาย ฉู่ฉี่ ปลาเนื้ออ่อน (NE - Network Engineer)</strong></br>
-                    พนักงานฝ่ายระบบเครือข่าย</br>
-                    ผู้ดูแลระบบเครือข่ายและความปลอดภัยขององค์กร
-                </figcaption>
-            </figure>
-        </section>
-        <section class="section" style="background-color: var(--card-bg);">
+        <section class="section">
             <div class="container">
-                <h3>วิสัยทัศน์และเป้าหมาย</h3>
-                <!-- 2.3 Mission/Vision -->
-                <h3>วิสัยทัศน์และเป้าหมาย</h3>
-                <ul style="margin-top: 20px; margin-left: 20px;">
-                    <li style="margin-bottom: 15px;">
-                        <strong>วิสัยทัศน์:</strong>
-                        มุ่งสู่การเป็นผู้นำด้าน Cyber Security ที่ขับเคลื่อนด้วยเทคโนโลยี AI
-                        เพื่อปกป้องข้อมูลและระบบของลูกค้าอย่างชาญฉลาดและยั่งยืน
-                    </li>
-                    <li>
-                        <strong>เป้าหมาย:</strong> เราจะปกป้องคุณแบบ "ดุดัน ไม่เกรงใจไวรัสหรือแฮ็กเกอร์ใด"
-                    </li>
-                </ul>
+                <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 40px;">ผู้บริหารและทีมงาน
+                </h2>
+
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <img src="images/CEO-1.jpg" alt="Elon Musk" class="team-img" />
+                        <h3>นาย อี ลอน มัสก์</h3>
+                        <p style="color: #888; margin-bottom: 5px;">Founder & CEO</p>
+                        <p style="font-size: 0.9rem;">ผู้ก่อตั้งและประธานเจ้าหน้าที่บริหาร</p>
+                    </div>
+
+                    <div class="team-card">
+                        <img src="images/CSO-2.jpg" alt="Mark Zuckerberg" class="team-img" />
+                        <h3>นาย มาร์ก ซักเคอร์เบิร์ก</h3>
+                        <p style="color: #888; margin-bottom: 5px;">Chief Security Officer (CSO)</p>
+                        <p style="font-size: 0.9rem;">หัวหน้าฝ่ายความปลอดภัยระบบ</p>
+                    </div>
+
+                    <div class="team-card">
+                        <img src="images/Employee-3.jpg" alt="Chu Chi" class="team-img" />
+                        <h3>นาย ฉู่ฉี่ ปลาเนื้ออ่อน</h3>
+                        <p style="color: #888; margin-bottom: 5px;">Network Engineer</p>
+                        <p style="font-size: 0.9rem;">ผู้ดูแลระบบเครือข่ายและความปลอดภัย</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section" style="background-color: var(--card-bg); border-top: 1px solid var(--border-color);">
+            <div class="container">
+                <h2 style="color: var(--primary-color); margin-bottom: 30px;">วิสัยทัศน์และเป้าหมาย</h2>
+                <div style="margin-bottom: 30px;">
+                    <h3>วิสัยทัศน์ (Vision)</h3>
+                    <p>มุ่งสู่การเป็นผู้นำด้าน Cyber Security ที่ขับเคลื่อนด้วยเทคโนโลยี AI
+                        เพื่อปกป้องข้อมูลและระบบของลูกค้าอย่างชาญฉลาดและยั่งยืน</p>
+                </div>
+                <div>
+                    <h3>เป้าหมาย (Goal)</h3>
+                    <p>เราจะปกป้องคุณแบบ "ดุดัน ไม่เกรงใจไวรัสหรือแฮ็กเกอร์ใด"</p>
+                </div>
             </div>
         </section>
     </main>
