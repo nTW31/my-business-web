@@ -111,7 +111,7 @@ nav {
 }
 
 .nav-logo-img {
-  height: 40px;
+  height: 60px;
   filter: invert(1);
   mix-blend-mode: screen;
 }
@@ -247,4 +247,38 @@ label {
 }
 .back-to-top:hover {
   transform: scale(1.1);
+}
+/* ========================
+   TEAM SECTION
+   ======================== */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, border-color 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  margin-bottom: 15px;
 }
