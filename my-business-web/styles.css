@@ -245,3 +245,6 @@ label {
   z-index: 50;
   transition: transform 0.3s;
 }
+.back-to-top:hover {
+  transform: scale(1.1);
+}
