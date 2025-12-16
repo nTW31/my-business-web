@@ -8,23 +8,49 @@
 }
 
 :root {
-  --primary-color: #cc0000;
-  --secondary-color: #1a1a1a;
-  --bg-color: #000000ff;
-  --text-color: #f8f8f8ff;
-  --white: #fafafaff;
-}
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-color: #38bdf8;
 }
 
 body {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.card-container {
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.btn-pro {
+  background-color: var(--accent-color);
+  color: #0f172a;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-pro:hover {
+  opacity: 0.9;
+  transform: translateY(-1px); /* ขยับขึ้นนิดนึงตอนเอาเมาส์ชี้ */
 }
 /* =========================================
    2. GLOBAL COMPONENTS (โจทย์ข้อ 1ค, 4)
