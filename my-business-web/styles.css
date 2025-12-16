@@ -1,0 +1,29 @@
+/* =========================================
+   1. RESET & VARIABLES (โจทย์ข้อ 1ก, 3ก)
+   ========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Universal Selector */
+}
+
+:root {
+  /* Color Palette (Theme: ดุดัน Red/Black) */
+  --primary-color: #cc0000; /* แดง Raptor */
+  --secondary-color: #1a1a1a; /* ดำเข้ม */
+  --bg-color: #f4f4f4; /* พื้นหลังเทาอ่อน */
+  --text-color: #333333; /* สีตัวอักษร */
+  --white: #ffffff;
+}
+
+html {
+  font-size: 16px; /* Base size (โจทย์ข้อ 2ข) */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Typography (โจทย์ข้อ 3ข) */
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
